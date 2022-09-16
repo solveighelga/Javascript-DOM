@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 10;
+}
+
+body{
+   font-family: "Montserrat"; 
+   background: lightgray;
+}
+
+.container{
+    width: 90%;
+    margin:auto;
+    display:flex;
+}
+
+/* Here is my groceries list box*/
+.groceries{
+    width: 600px;
+    min-height: 100vh; /* as my grocery list grows so does my container */
+    margin: auto;
+    background: white;
+    box-shadow: 10px 10px 24px 0 rgba(0, 0, 0, 0.5);
+}
+
+.groceries h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1em;
+    font-family: "Mumblers Demo";
+}
+
+/* Span is for my animation. I put it below my h1 because that is where it takes place */
+span{
+    opacity: 0;
+    transition: all 0.4s ease;    
+}
+span.fade{
+    opacity: 1;
+}
+
+
+.text {
+    text-align: center;
+}
+
+.groceries i{
+    font-size: 2.5rem;
+    margin: 2px;
+}
+
+/* Here I styled my line to write what I need to buy at the store */
+.groceries input{
+    font-family: inherit;
+    outline:0;
+    border: 0;
+    border-bottom: 3px solid black;
+    width: 70%;
+    font-size: 1.5rem;
+}
+
+#allItems h2{
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* I want it to look good on different screen sizes */
+@media(max-width:480px){
+    .groceries h1{
+        font-size: 2rem;
+    }
+    .groceries i{
+        font-size: 1.5rem;
+    }
+    .groceries input{
+        font-size: 1rem;
+    }
+    #allItems h2{
+        font-size: 1.5rem;
+        margin-left: 25px;
+    }
+}
